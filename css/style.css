@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(35, 33, 33, 0.8);
+}
+nav {
+    background-color: rgba(105, 153, 207, 0.5);
+    display: flex;
+    justify-content: space-around;
+}
+.col {
+    margin: 30vh 10vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.about-image img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    right: 100px;
+}
+.text-about {
+    color: white;
+}
+.text-about .description{
+    animation: fadeinout 4s infinite;
+    -webkit-animation: fadeinout 4s infinite;
+}
+@keyframes fadeinout {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeinout {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+a.kontak {
+    background-color: rgba(83, 240, 21, 0.3);
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+#container-profil {
+    height: 100vh;
+    background-color: rgba(162, 211, 228, 0.5);
+}
+.card-description ul {
+    list-style: none;
+    display: flex;
+    gap: 13px;
+  }
+  .card-description ul li{
+    position: relative;
+    top: -5px;
+    right: 15px;
+  }
+  @keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 0.4;
+    }
+  }
+  .card-description .bullet {
+    background-color: blue;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right:20px;
+  }
+  .card-description .bullet::after{
+    content: "";
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: bullet 4s infinite;
+  }
+  @keyframes bullet {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 0.4;
+    }
+  }
+#card-pendidikan-description {
+    top: -160px;
+    position: relative;
+  }
+  .cards {
+    margin: 0 auto;
+  }
+  #card-skill-description {
+    position: relative;
+    bottom: 0px;
+  }
+  #card-kerja-description {
+    position: relative;
+    top: -95px;
+  }
+  #sosial h5 {
+    margin: 20px auto;
+    /* top: -130px;
+    left: 330px; */
+  }
+#sosial .box-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* position: relative; */
+    /* top: -10px;
+    right: 200px; */
+}
